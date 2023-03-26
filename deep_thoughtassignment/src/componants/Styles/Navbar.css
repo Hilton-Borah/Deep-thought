@@ -1,0 +1,38 @@
+.mainNavbar {
+    width: 100%;
+    /* position: absolute; */
+    background: #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainNavbarUnder {
+    width: 80%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+}
+
+.logoNavbar{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3683F0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.notification{
+    width: 80%;
+}
