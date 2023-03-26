@@ -1,36 +1,38 @@
-.mainBody{
-    width:80%;
+.mainBody {
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: repeat(2, 50%);
     margin: auto;
     margin-top: 40px;
 }
 
-.mainBody>div{
+.mainBody>div {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.mainbodyhomepage{
+.mainbodyhomepage {
     width: 100%;
     display: grid;
     margin: auto;
     grid-template-columns: 5% 90% 5%;
-    /* gap: 20px; */
+    margin-top: 100px;
+    /* top: -1000px; */
 }
 
-.leftsidebar{
+
+.leftsidebar {
     width: 130px;
     height: 500px;
     position: relative;
     border: 0.1px solid lightgray;
     background: #FDFDFD;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-border-radius: 0px 20px 20px 20px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 20px 20px 0px;
 }
 
-.leftsidebar>div:first-child{
+.leftsidebar>div:first-child {
     border-radius: 0px 20px 0px 0px;
     height: 50px;
     background-color: black;
@@ -42,7 +44,7 @@ border-radius: 0px 20px 20px 20px;
     padding-right: 5px;
 }
 
-.leftsidebar>div:last-child{
+.leftsidebar>div:last-child {
     width: 30px;
     border: 0.5px solid blue;
     border-radius: 5px;
@@ -54,13 +56,13 @@ border-radius: 0px 20px 20px 20px;
     margin-top: 20px;
 }
 
-.leftsidebar>div:last-child>div{
+.leftsidebar>div:last-child>div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.leftsidebar>div>div{
+.leftsidebar>div>div {
     width: 25px;
     height: 25px;
     background-color: white;
@@ -74,23 +76,17 @@ border-radius: 0px 20px 20px 20px;
 
 /* journey board */
 
-
-
-
-
-
-
-.leftsidebarJourney{
+.leftsidebarJourney {
     width: 350px;
     position: relative;
     height: 500px;
     border: 0.1px solid lightgray;
     background: #FDFDFD;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-border-radius: 0px 20px 20px 20px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 20px 20px 0px;
 }
 
-.leftsidebarJourney>div:first-child{
+.leftsidebarJourney>div:first-child {
     border-radius: 0px 20px 0px 0px;
     height: 50px;
     background-color: black;
@@ -102,7 +98,7 @@ border-radius: 0px 20px 20px 20px;
     padding: 0px 15px;
 }
 
-.leftsidebarJourney>div:last-child{
+.leftsidebarJourney>div:last-child {
     width: 80%;
     padding: 10px;
     margin: auto;
@@ -112,7 +108,7 @@ border-radius: 0px 20px 20px 20px;
 }
 
 
-.leftsidebarJourney>div:first-child>div:last-child{
+.leftsidebarJourney>div:first-child>div:last-child {
     width: 25px;
     height: 25px;
     background-color: white;
@@ -124,10 +120,204 @@ border-radius: 0px 20px 20px 20px;
     cursor: pointer;
 }
 
-.titlelist{
+.titlelist {
     padding-left: 15px;
 }
 
-.firstTitle{
+.firstTitle {
     font-weight: bold;
+}
+
+
+
+.rightsidebar {
+    width: 100%;
+    position: relative;
+    height: 310px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* right: 0; */
+}
+
+.rightsidebar>div:first-child {
+    border: 0.5px solid lightgray;
+    border-radius: 20px 0px 0px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.rightsidebar>div:last-child {
+    border: 0.5px solid lightgray;
+    border-right: none;
+    border-left: none;
+}
+
+.rightsidebar>div>div {
+    width: 10px;
+    padding: 10px 20px;
+}
+
+.firstright {
+    width: 30px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -3px;
+}
+
+/* second---------- */
+
+.rightsidebartwo {
+    width: 100%;
+    position: relative;
+    height: 310px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* right: 0; */
+}
+
+.rightsidebartwo>div:last-child {
+    border: 0.5px solid lightgray;
+    border-radius: 20px 0px 0px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.rightsidebartwo>div:first-child {
+    border: 0.5px solid lightgray;
+    border-right: none;
+    border-left: none;
+}
+
+.rightsidebartwo>div>div {
+    width: 10px;
+    padding: 10px 20px;
+}
+
+.firstrighttwo {
+    width: 30px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -3px;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+ .mainBody {
+        grid-template-columns: repeat(1, 50%);
+    }
+
+    .leftsidebar {
+        width: 70px;
+        height: 400px;
+        position: relative;
+    }
+
+
+    .leftsidebar>div:last-child {
+        width: 15px;
+        height: 15px;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .leftsidebarJourney {
+        width: 250px;
+        height: 400px;
+    }
+/* 
+    .rightsidebar {
+        width: 100px;
+        position: relative;
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rightsidebartwo {
+        width: 50px;
+        position: relative;
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+.rightsidebartwo>div:last-child {
+    border: 0.5px solid lightgray;
+    border-radius: 20px 0px 0px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+    .mainbodyhomepage {
+
+        width: 100%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 5% 90% 5%;
+        margin-top: 100px;
+    }  */
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+     .mainBody {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+     .leftsidebar {
+        width: 70px;
+        height: 400px;
+        position: relative;
+    }
+
+
+    .leftsidebar>div:last-child {
+        width: 15px;
+        height: 15px;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .leftsidebarJourney {
+        width: 250px;
+        height: 400px;
+    }
+
+    .rightsidebar {
+        width: 130px;
+        position: relative;
+        height: 310px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rightsidebartwo {
+        width: 100px;
+        position: relative;
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rightsidebartwo>div:first-child {
+        width: 70px;
+        border: none;
+    }
+
+
+
+    .mainbodyhomepage {
+        width: 360px;
+        display: grid;
+        margin: auto;
+        margin-top: 100px;
+    }  
 }

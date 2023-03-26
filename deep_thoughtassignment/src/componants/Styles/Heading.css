@@ -62,3 +62,35 @@
     /* identical to box height */
     letter-spacing: 0.02em;
 }
+
+
+
+
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .maindiv {
+        width: 80%;
+        border-radius: 5px;
+        margin: auto;
+        margin-left: 100px;
+    }
+
+    .heading {
+        font-size: 18px;
+        line-height: 30px;
+    
+    }
+
+
+    .buttonDiv {
+        border-radius: 5px;
+    }
+    
+    .buttonDiv div {
+        width: 70px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+}

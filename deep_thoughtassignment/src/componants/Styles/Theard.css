@@ -13,12 +13,12 @@
 }
 
 .threadFirst>div {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
 
     width: 89.62px;
     height: 27px;
     left: 844.59px;
-    top: calc(50% - 27px/2 - 349px);
+    top: calc(50% - 27px/2 - 349px); */
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -159,4 +159,20 @@
     outline: none;
     margin-top: -10px;
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width:767px) and (max-width:320px) { 
+    .secondboxes>div {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .threadFirst {
+        width: 400px;
+    }
+
+    .secondboxes>div {
+        width: 160px;
+    }
 }
